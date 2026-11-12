@@ -56,10 +56,8 @@ def fibonacci(fibonacci_number: int):
    else:
     return fibonacci(fibonacci_number-1) + fibonacci(fibonacci_number-2)
 
-    pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-
-print(fibonacci("hola"))
+#print(fibonacci(10))
 
