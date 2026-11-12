@@ -61,5 +61,5 @@ def fibonacci(fibonacci_number: int):
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 
-print(fibonacci(10))
+print(fibonacci("hola"))
 

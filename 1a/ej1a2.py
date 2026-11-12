@@ -40,11 +40,24 @@ Exemple:
      30
 
 '''
+def sum_odd_numbers(list_numbers: int):
 
-def sum_odd_numbers(list_numbers):
-    # Write here your code
-    pass
+    suma = 0
+
+    for numero in list_numbers:
+        if int(numero) < 0:
+            raise ValueError("Els valors han de ser majors o iguals a 0")
+
+        if type(numero) != int:
+            raise ValueError("Els valors han de ser nombres enters")
+        
+        if numero %2 != 0:
+            suma = suma + numero
+            
+
+    return suma
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# print(sum_odd_numbers([1, 2, 3, 4, 5, 10, 21, 100]))
+
+print(sum_odd_numbers([1, 2, 3, 4, 5, 10, 21, 100]))
