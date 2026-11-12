@@ -32,9 +32,19 @@ Exemple:
 '''
 
 def invert_text(text_chain:str):
-    # Write here your code
-    pass
+
+    if type(text_chain) != str:
+        raise ValueError("S'ha d'introduir un text  ")
+
+    text_invertit = ""
+
+    for lletra in text_chain:        
+        text_invertit = lletra + text_invertit
+
+    return text_invertit
+
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# print(invert_text("Hello world!"))
+
+print(invert_text("Hello world!"))
