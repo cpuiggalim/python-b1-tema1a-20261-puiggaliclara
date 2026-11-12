@@ -41,10 +41,18 @@ Exemple:
 
 def fibonacci(fibonacci_number: int):
    
+   if type(fibonacci_number) != int:
+    raise ValueError("El valor ha de ser un nombre enter")
+
+   if fibonacci_number < 0:
+    raise ValueError("El valor no pot ser negatiu")
+
    if fibonacci_number == 0:
     return 0
+  
    elif fibonacci_number == 1:
     return 1
+   
    else:
     return fibonacci(fibonacci_number-1) + fibonacci(fibonacci_number-2)
 
